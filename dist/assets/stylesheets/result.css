@@ -1,3 +1,12 @@
+.footer {
+  background: rgba(236, 240, 241, 0.3);
+  min-height: 300px;
+  border-top: 2px solid #e7ebf0;
+}
+.footer img {
+  width: 60px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -189,7 +198,6 @@ body {
 .home__testimonial {
   padding-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 2px solid #ddd;
 }
 .home__testimonial--wrapper {
   margin-top: 30px;
@@ -217,6 +225,27 @@ body {
 .home__testimonial--body p {
   margin-top: 30px;
   font-style: italic;
+}
+.home__testimonial--body cite {
+  color: #4CAF50;
+  font-size: 2rem;
+  display: block;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .home__testimonial--body cite {
+    padding-left: 0;
+  }
+}
+.home__testimonial--body cite:before {
+  content: "\2014 \2009";
+}
+.home__testimonial--body small {
+  letter-spacing: 0.5px;
+  padding-left: 20px;
+  color: #aaaaaa;
 }
 .home__testimonial--body .avatar-img {
   border: 2px solid #ddd;

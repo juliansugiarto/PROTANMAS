@@ -202,7 +202,6 @@ body {
   &__testimonial {
     padding-top: 40px;
     padding-bottom: 40px;
-    border-bottom: 2px solid #ddd;
 
     &--wrapper {
       margin-top: 30px;
@@ -236,6 +235,29 @@ body {
       p {
         margin-top: 30px;
         font-style: italic;
+      }
+
+      cite {
+        color: @color-pr;
+        font-size: 2rem;
+        display: block;
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: 600;
+
+        @media(max-width: 480px) {
+          padding-left: 0;
+        }
+      }
+
+      cite:before {
+        content: "\2014 \2009";
+      }
+
+      small {
+        letter-spacing: 0.5px;
+        padding-left: 20px;
+        color: darken(#ddd,20%);
       }
 
       .avatar-img {
