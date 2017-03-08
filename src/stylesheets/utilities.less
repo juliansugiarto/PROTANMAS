@@ -1,5 +1,104 @@
 // Futura utilities
+@screen-md-min: 992px;
+@screen-xs-max: 480px;
+@color-pr: #4CAF50;
+.cc-navbar {
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
 
+  .navbar-brand {
+    padding: 10px;
+    margin-top: 15px;
+  }
+}
+
+.list-border {
+  border-top: 2px solid #e7ebf0;
+}
+
+.section-title {
+  color: @color-pr;
+  font-weight: 600;
+  margin-left: 40px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 3px;
+    background: #ddd;
+    margin-top: 45px;
+  }
+
+  @media(max-width: 480px) {
+    text-align: center;
+    margin-left: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      background: #ddd;
+      margin-top: 45px;
+      margin-left: 13px;
+      display: none;
+    }
+  }
+}
+
+.btn-white-success-outline {
+  background: transparent;
+  border-color: #fff !important;
+  color: #fff;
+  transition: all 0.5s;
+  margin-top: 40px;
+
+  &:hover {
+    background-color: #fff;
+    color: #4CAF50 !important;
+    transition: all 0.5s;
+  }
+}
+
+.btn-success-outline {
+  background: #fff;
+  border-color: #4CAF50;
+  color: #4CAF50;
+  transition: all 0.5s;
+  bottom: 0;
+
+  &:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    transition: all 0.5s;
+    transform: translateY(-3px);
+  }
+}
+// Mixin
+.padding-tb(@size) {
+  padding-top: @size;
+  padding-bottom: @size;
+}
+
+.padding-lr(@size) {
+  padding-left: @size;
+  padding-right: @size;
+}
+
+.margin-tb(@size) {
+  margin-top: @size;
+  margin-bottom: @size;
+}
+
+.margin-lr(@size) {
+  margin-left: @size;
+  margin-right: @size;
+}
+
+.translateX(@x) {
+  -webkit-transform: translateX(@x);
+      -ms-transform: translateX(@x); // IE9 only
+          transform: translateX(@x);
+}
 //font-weight
 .fwb {
   font-weight: bold;

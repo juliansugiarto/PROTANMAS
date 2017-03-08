@@ -6,30 +6,269 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="PT. PROTANMAS" content="">
       <meta name="Julian" content="">
-      <title>Julian Sugiarto</title>
+      <title>PT. PROTANMAS</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
       <link rel="stylesheet" href="dist/assets/fonts/font-awesome/css/font-awesome.min.css">
-      <link rel="stylesheet" href="dist/assets/stylesheets/result.css">
       <link rel="stylesheet" href="dist/assets/stylesheets/foundation_vendor.css">
+      <link rel="stylesheet" href="dist/assets/stylesheets/result.css">
+      <link rel="stylesheet" href="dist/assets/stylesheets/jquery.bxslider.css">
   </head>
   <body>
-      
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-        
-          <button class="btn btn-primary"> ASDASDSA</button>
+    <nav class="navbar navbar-default navbar-fixed-top cc-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a title="PT. PROTANMAS" href="/">
+            <img src="dist/assets/images/logo.png" alt="PT. PROTANMAS" size="150" class="navbar-brand">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/">HOME</a>
+            </li>
+            <li>
+              <a href="/">ABOUT US</a>
+            </li>
+            <li>
+              <a href="/">SITEPLAN</a>
+            </li>
+            <li>
+              <a href="/">GALLERY</a>
+            </li>
+            <li>
+              <a href="/">PRICELIST</a>
+            </li>
+            <li>
+              <a href="/">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section id="home-hero" class="fill">
+      <div class="home__hero">
+        <div class="container">
+          <div class="row">
 
-          <span class="fa-stack fa-lg fa-4x phoneicon">
-            <i class="fa fa-stack-1x fa-phone phone__icon-phone" aria-hidden="true"></i>
-            <i class="fa fa-stack-2x fa-circle-o phone__icon-circle"></i>
-          </span>
+            <div class="col-sm-6 col-sm-push-6 col-lg-7 col-lg-push-5">
+              <div class="home__hero--slider">
+                <ul class="heroSlider">
+                  <li>
+                    <img src="dist/assets/images/hero/hero_1.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/assets/images/hero/hero_2.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/assets/images/hero/hero_3.jpg" alt="">
+                  </li>
+                </ul>
+
+                <div class="home__hero--dots">
+                  <ul class="list-inline">
+                    <li>
+                      <a data-slide-index="0" href="#"></a>
+                    </li>
+                    <li>
+                      <a data-slide-index="1" href="#"></a>
+                    </li>
+                    <li>
+                      <a data-slide-index="2" href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-sm-pull-6 col-lg-5 col-lg-pull-7">
+              <div class="home__hero--desc">
+                <h1>Title Title Title Title</h1>
+                <p class="u-mt--30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, reiciendis! Laborum, sequi? Ipsam tempore pariatur animi veniam, quasi nihil maiores ipsum facere reprehenderit velit consequatur cupiditate amet natus debitis praesentium!</p>
+
+                <button href="#" class="btn btn-lg btn-block btn-white-success-outline u-mb--40">Contact Us</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="home__achievement">
+        <div class="row">
+          <h1 class="section-title">Achievement</h1>
+          <div class="col-sm-4">
+            <div class="home__achievement--image">
+              <img src="dist/assets/images/icon/house.png" alt="house" class="img-responsive">
+              <h4>1.100+ Homes</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="home__achievement--image">
+              <img src="dist/assets/images/icon/family.png" alt="house" class="img-responsive">
+              <h4>400+ Families</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="home__achievement--image">
+              <img src="dist/assets/images/icon/safety.png" alt="house" class="img-responsive">
+              <h4>100% Safe</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    
+    <div id="home-gallery">
+      <div class="container">
+        <div class="home__gallery">
+          <div class="row">
+            <h1 class="section-title">Gallery</h1>
+            <div class="home__gallery--list">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="home__gallery--desc">
+                    <h3>Type 36</h3>
+                    <p>Memiliki bangunan dengan luas 36m<sup>2</sup> dan luas tanah sebesar 72m<sup>2</sup>. Rumah yang sangat cocok untuk suami istri atau bujangan.</p>
+
+                    <button href="#" class="btn btn-lg btn-block btn-success-outline">Lihat Harga</button>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="home__gallery--image">
+                    <img src="dist/assets/images/homegallery/tipe36.jpg" alt="tipe36" class="img-responsive">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="home__gallery--list list-border">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="home__gallery--desc">
+                    <h3>Type 45</h3>
+                    <p>Memiliki bangunan dengan luas 45m<sup>2</sup> dan luas tanah sebesar 90m<sup>2</sup>. Rumah yang sangat cocok untuk suami istri atau bujangan.</p>
+
+                    <button href="#" class="btn btn-lg btn-block btn-success-outline">Lihat Harga</button>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="home__gallery--image">
+                    <img src="dist/assets/images/homegallery/tipe45.jpg" alt="tipe36" class="img-responsive">
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+
+            <div class="home__gallery--list list-border">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="home__gallery--desc">
+                    <h3>Type 54</h3>
+                    <p>Memiliki bangunan dengan luas 54m<sup>2</sup> dan luas tanah sebesar 90m<sup>2</sup>. Rumah yang sangat cocok untuk suami istri atau bujangan.</p>
+
+                    <button href="#" class="btn btn-lg btn-block btn-success-outline">Lihat Harga</button>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="home__gallery--image">
+                    <img src="dist/assets/images/homegallery/tipe54.jpg" alt="tipe36" class="img-responsive">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="home__gallery--list list-border">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="home__gallery--desc">
+                    <h3>Type 72</h3>
+                    <p>Memiliki bangunan dengan luas 72m<sup>2</sup> dan luas tanah sebesar 90m<sup>2</sup>. Rumah yang sangat cocok untuk suami istri atau bujangan.</p>
+
+                    <button href="#" class="btn btn-lg btn-block btn-success-outline">Lihat Harga</button>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="home__gallery--image">
+                    <img src="dist/assets/images/homegallery/tipe72.jpg" alt="tipe36" class="img-responsive">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="home-testimonial">
+      <div class="container">
+        <div class="home__testimonial">
+          <div class="row">
+            <h1 class="section-title">Testimonial</h1>
+            <div class="col-sm-4">
+              <div class="home__testimonial--wrapper">
+                <div class="home__testimonial--header">
+                  <img src="dist/assets/images/homegallery/tipe45.jpg" alt="tipe45" class="img-responsive header-img">
+                </div>
+
+                <div class="home__testimonial--body">
+                  <img src="dist/assets/images/testimonial/patricia.jpg" alt="patricia" class="img-responsive avatar-img">
+                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum a architecto blanditiis beatae, debitis cum doloribus. Voluptatibus accusantium quae fugit distinctio modi totam magnam fuga, explicabo eos vero praesentium rem."</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="home__testimonial--wrapper">
+                <div class="home__testimonial--header">
+                  <img src="dist/assets/images/homegallery/tipe54.jpg" alt="tipe54" class="img-responsive header-img">
+                </div>
+
+                <div class="home__testimonial--body">
+                  <img src="dist/assets/images/testimonial/benson.jpg" alt="benson" class="img-responsive avatar-img">                 
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="home__testimonial--wrapper">
+                <div class="home__testimonial--header">
+                  <img src="dist/assets/images/homegallery/tipe72.jpg" alt="tipe72" class="img-responsive header-img">
+                </div>
+
+                <div class="home__testimonial--body">
+                  <img src="dist/assets/images/testimonial/melissa.jpg" alt="melissa" class="img-responsive avatar-img">                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    
+
+    
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
     <script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
     <script src="dist/assets/javascripts/foundation_vendor.js"></script>
+    <script src="dist/assets/javascripts/jquery.bxslider.min.js"></script>
     <script src="src/javascripts/home.js"></script>
+
   </body>
 </html>
 
