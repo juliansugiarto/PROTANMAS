@@ -1,3 +1,85 @@
+#aboutus-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url('../images/aboutus/hero.png') top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.aboutus__hero {
+  background-color: rgba(16, 158, 25, 0.5);
+  color: #fff;
+  min-height: 550px;
+  padding-top: 230px;
+}
+.aboutus__hero h1 {
+  font-weight: 600;
+  font-size: 3.2em;
+  line-height: 1.4;
+  padding: 0 50px;
+}
+.aboutus__section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.aboutus__section img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.aboutus__section h1 {
+  font-weight: 600;
+}
+.aboutus__v {
+  margin-top: 30px;
+  padding-left: 28px;
+}
+.aboutus__v p {
+  color: #4CAF50;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 17px;
+}
+.aboutus__v h4 {
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-top: 20px;
+}
+.aboutus__v ul {
+  margin-left: -15px;
+}
+.aboutus__v li {
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-top: 20px;
+}
+.aboutus__m {
+  margin-top: 30px;
+}
+@media (max-width: 667px) {
+  .aboutus__m {
+    padding-left: 28px;
+  }
+}
+.aboutus__m p {
+  color: #4CAF50;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 17px;
+}
+.aboutus__m h4 {
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-top: 20px;
+}
+
 .footer {
   background: rgba(236, 240, 241, 0.3);
   min-height: 300px;
@@ -18,9 +100,6 @@ body {
 }
 .navbar-default .navbar-nav > li > a:hover {
   color: #4CAF50 !important;
-}
-.fill {
-  min-height: 500px;
 }
 .bx-wrapper {
   box-shadow: none;
@@ -56,7 +135,6 @@ body {
 .home__hero {
   background-color: rgba(76, 175, 80, 0.75);
   color: #fff;
-  padding-top: 200px;
   min-height: 550px;
   padding-top: 180px;
 }
@@ -259,12 +337,137 @@ body {
 }
 
 
+#siteplan-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url('../images/aboutus/hero.png') top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-height: 350px;
+  width: 100%;
+  height: 100%;
+}
+.siteplan__hero {
+  background-color: rgba(16, 158, 25, 0.5);
+  color: #fff;
+  min-height: 350px;
+  padding-top: 160px;
+}
+.siteplan__hero h1 {
+  font-weight: 600;
+  font-size: 3.2em;
+  line-height: 1.4;
+  padding: 0 50px;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {
+  opacity: 0.7;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 85px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 .cc-navbar {
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
 }
 .cc-navbar .navbar-brand {
   padding: 10px;
   margin-top: 15px;
+}
+.fill {
+  min-height: 500px;
 }
 .list-border {
   border-top: 2px solid #e7ebf0;
@@ -297,6 +500,20 @@ body {
     margin-left: 13px;
     display: none;
   }
+}
+.subsection-title {
+  color: #4CAF50;
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.subsection-title:before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 2px;
+  background-color: #4CAF50;
+  margin-top: 30px;
 }
 .btn-white-success-outline {
   background: transparent;

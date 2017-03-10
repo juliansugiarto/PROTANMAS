@@ -11,6 +11,11 @@
   }
 }
 
+.fill {
+  min-height: 500px;
+}
+
+
 .list-border {
   border-top: 2px solid #e7ebf0;
 }
@@ -42,6 +47,21 @@
       margin-left: 13px;
       display: none;
     }
+  }
+}
+
+.subsection-title {
+  color: @color-pr;
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 2px;
+    background-color: @color-pr;
+    margin-top: 30px;
   }
 }
 
