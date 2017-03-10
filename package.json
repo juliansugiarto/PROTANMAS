@@ -28,5 +28,10 @@
     "grunt-open": "^0.2.3",
     "grunt-parallel": "^0.5.1",
     "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "start": "grunt serve"
   }
 }
+
+
