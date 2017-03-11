@@ -80,6 +80,79 @@
   margin-top: 20px;
 }
 
+#contactus-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url('../images/aboutus/hero.png') top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+  width: 100%;
+  height: 100%;
+}
+.contactus__hero {
+  background-color: rgba(16, 158, 25, 0.5);
+  color: #fff;
+  min-height: 350px;
+  padding-top: 160px;
+}
+.contactus__hero h1 {
+  font-weight: 600;
+  font-size: 3.2em;
+  line-height: 1.4;
+  padding: 0 50px;
+}
+.contactus__section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contactus__section h1 {
+  margin-left: 20px;
+}
+.icon-area.email:hover {
+  cursor: pointer;
+}
+.icon-area:hover .icon__1x {
+  color: #fff;
+  transition: all 0.5s;
+}
+.icon-area:hover .icon__2x {
+  opacity: 1;
+  z-index: -1000;
+  transition: all 0.5s;
+}
+.icon__1x {
+  opacity: 0.8;
+  color: #4CAF50;
+}
+.icon__2x {
+  opacity: 0.3;
+  color: #4CAF50;
+}
+.link__phone {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.link__email {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  transition: color 0.5s;
+}
+.link__email:hover {
+  text-decoration: none;
+  color: #3d8b40;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
 .footer {
   background: rgba(236, 240, 241, 0.3);
   min-height: 300px;
@@ -375,8 +448,6 @@ body {
 }
 .home__gallery {
   padding-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 2px solid #ddd;
 }
 .home__gallery--list {
   padding-top: 40px;
@@ -491,6 +562,103 @@ body {
 }
 
 
+#pricelist-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url('../images/aboutus/hero.png') top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+  width: 100%;
+  height: 100%;
+}
+.nav-credit {
+  margin-top: 15px;
+  padding: 0.2rem;
+}
+.nav-credit > li > a {
+  font-size: 14px;
+}
+.tab-credit {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.nav-item-credit {
+  margin-bottom: -1px;
+  border: 0;
+  color: #fff;
+  display: block;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+.nav-item-credit:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #4CAF50;
+  border-left-width: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.75);
+}
+.panel-default > .panel-heading h3 {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #4CAF50;
+}
+.panel-default > .panel-heading button {
+  margin-top: 15%;
+  margin-bottom: 20px;
+}
+.panel-default > .panel-body {
+  border: 1px solid #4CAF50;
+}
+.panel-heading[aria-expanded=true] .fa-caret-down {
+  display: none;
+}
+.panel-heading[aria-expanded=false] .fa-caret-up {
+  display: none;
+}
+.pricelist__hero {
+  background-color: rgba(16, 158, 25, 0.5);
+  color: #fff;
+  min-height: 350px;
+  padding-top: 160px;
+}
+.pricelist__hero h1 {
+  font-weight: 600;
+  font-size: 3.2em;
+  line-height: 1.4;
+  padding: 0 50px;
+}
+.pricelist__list {
+  padding-left: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 480px) {
+  .pricelist__list {
+    padding-left: 0;
+  }
+}
+.pricelist__price {
+  color: #4CAF50;
+  letter-spacing: 0.5px;
+}
+.pricelist__wrapper {
+  border: 1px solid #4CAF50;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 40px;
+}
 
 #siteplan-hero {
   position: relative;
@@ -614,6 +782,9 @@ body {
   }
 }
 
+.text-green {
+  color: #4CAF50;
+}
 .cc-navbar {
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -625,7 +796,7 @@ body {
   min-height: 500px;
 }
 .list-border {
-  border-top: 2px solid #e7ebf0;
+  border-bottom: 2px solid #e7ebf0;
 }
 .section-title {
   color: #4CAF50;
@@ -694,6 +865,11 @@ body {
   color: #fff;
   transition: all 0.5s;
   transform: translateY(-3px);
+}
+.btn-success-outline:focus {
+  outline: none;
+  color: #4CAF50;
+  background-color: #fff;
 }
 .fwb {
   font-weight: bold;

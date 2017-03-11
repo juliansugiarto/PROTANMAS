@@ -2,6 +2,10 @@
 @screen-md-min: 992px;
 @screen-xs-max: 480px;
 @color-pr: #4CAF50;
+
+.text-green {
+  color: @color-pr;
+}
 .cc-navbar {
   box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
 
@@ -17,7 +21,11 @@
 
 
 .list-border {
-  border-top: 2px solid #e7ebf0;
+  // width: 80%;
+  // margin-left: 10%;
+  // height: 2px;
+  // background-color: #e7ebf0;
+  border-bottom: 2px solid #e7ebf0;
 }
 
 .section-title {
@@ -91,6 +99,12 @@
     color: #fff;
     transition: all 0.5s;
     transform: translateY(-3px);
+  }
+
+  &:focus {
+    outline: none;
+    color: #4CAF50;
+    background-color: #fff;
   }
 }
 // Mixin
