@@ -14,8 +14,8 @@
 .aboutus__hero {
   background-color: rgba(16, 158, 25, 0.5);
   color: #fff;
-  min-height: 550px;
-  padding-top: 230px;
+  min-height: 350px;
+  padding-top: 150px;
 }
 .aboutus__hero h1 {
   font-weight: 600;
@@ -489,6 +489,7 @@ body {
   position: relative;
   box-shadow: 0 1px 1px #e2e8ea;
 }
+
 
 
 #siteplan-hero {
