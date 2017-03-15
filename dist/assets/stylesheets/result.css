@@ -243,6 +243,9 @@
   zoom: 1;
   /* hasLayout ie7 trigger */
 }
+.nav-tabs li span {
+  font-size: 12px;
+}
 .nav-tabs,
 .nav-pills {
   text-align: center;
@@ -369,10 +372,11 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .home__hero p {
   font-weight: 500;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 .home__hero img {
@@ -587,6 +591,16 @@ body {
   margin-top: 20px;
   font-size: 20px;
 }
+.list-icon {
+  margin-left: -20px;
+  margin-top: 15px;
+}
+.list-icon p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #4CAF50;
+}
 .nav-item-credit {
   margin-bottom: -1px;
   border: 0;
@@ -658,6 +672,11 @@ body {
   width: 100%;
   min-height: 300px;
   margin-bottom: 40px;
+}
+.pricelist__icon {
+  width: 72px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #siteplan-hero {
