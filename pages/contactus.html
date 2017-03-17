@@ -68,8 +68,30 @@
       <div class="contactus__section">
         <div class="row">
           <div class="col-sm-8">
-            <h1 class="section-title">Have a Question?</h1>
-            <p class="u-ml--25 u-mt--20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quidem inventore, ad itaque quibusdam veritatis minus adipisci velit. Aliquam facilis quasi, exercitationem ratione omnis enim similique quia explicabo iure quis.</p>
+            <h1 class="section-title">Ada Pertanyaan?</h1>
+            <p class="u-ml--25 u-mt--20"><strong>PT. PROTANMAS AGUNG INDONESIA</strong> menyediakan layanan informasi bagi Anda yang ingin mengetahui lebih dalam, layanan yang menjawab semua pertanyaan Anda, dan membuat solusi yang efektif bagi kebutuhan atau kesulitan Anda.</p>
+            
+            <form name="contactusform" method="post" action="send_contactus_email.php">
+              <div class="form__wrapper">
+                <label>Nama:</label>
+                <br>
+                <input name="name">
+                <br>
+                <label>Alamat Email:</label>
+                <br>
+                <input name="email">
+                <br>
+                <label>No. Telepon:</label>
+                <br>
+                <input name="email">
+                <br>
+                <label>Pertanyaan:</label>
+                <br>
+                <textarea rows="5" name="question"></textarea>
+                <br>
+                <input type="submit" name="submit">
+              </div>
+            </form>
           </div>
 
           <div class="col-sm-4">
@@ -78,6 +100,39 @@
         </div>
       </div>
       <div class="list-border"></div>
+    </div>
+
+    <div class="contactus__person-section">
+      <div class="container">
+        <div class="contactus__person">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 class="fwb">Kantor Pusat</h4>
+              <p>Jalan Suryopranoto No. 10</p>
+              <p>Harmoni Jakarta Pusat</p>
+              <p>021 63866882</p>
+
+              <h3 class="fwb u-mt--30">Kantor Pemasaran</h3>
+              <p>Jalan Raya Bandung Km 7.5</p>
+              <p>Karang Tengah Cianjur</p>
+              <p>0263 2324069</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h3 class="fwb">Sales info & Inquiries</h4>
+              <p>Email: protanmas@gmail.com</p>
+              <p>Phone: 021 - 2313213</p>
+              <p>Fax: 021 - 5123123</p>
+
+              <h3 class="fwb u-mt--30">General Contact</h3>
+              <p>Email: protanmas@gmail.com</p>
+              <p>Phone: 021 - 2313213</p>
+              <p>Fax: 021 - 5123123</p>
+              <p>Schedule: Monday - Friday, 08:00 AM to 06.30 PM </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container">
